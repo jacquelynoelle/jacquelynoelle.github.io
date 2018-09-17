@@ -28,16 +28,26 @@ h1 {
   text-align: center;
 }
 
+
 #the-work {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 
-#the-work > div {
-  width: 49%;
+@media (min-width: 600px) {
+  #the-work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+#the-work > a {
+  width: 100%;
   height: 25rem;
   border: 1px white solid;
   display: flex;
@@ -47,6 +57,12 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media (min-width: 600px) {
+  #the-work > a {
+    width: 49%;
+  }
 }
 
 #the-work h2, #the-work h4 {
@@ -66,27 +82,27 @@ h1 {
   color: rgba(255,255,255, 0.7);
 }
 
-#the-work div.hotel {
+#the-work a.hotel {
   background-image: url("../images/hotel.jpg");
 }
 
-#the-work div.alaska {
+#the-work a.alaska {
   background-image: url("../images/alaska.jpg");
 }
 
-#the-work div.rideshare {
+#the-work a.rideshare {
   background-image: url("../images/taxi.jpg");
 }
 
-#the-work div.patagonia {
+#the-work a.patagonia {
   background-image: url("../images/patagonia.jpg");
 }
 
-#the-work div.adagrams {
+#the-work a.adagrams {
   background-image: url("../images/adagrams.jpg");
 }
 
-#the-work div.google {
+#the-work a.google {
   background-image: url("../images/google.jpg");
 }
 

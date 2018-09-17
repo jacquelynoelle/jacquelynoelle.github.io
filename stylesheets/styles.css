@@ -17,8 +17,14 @@ ul {
   display: flex;
   flex-direction: row;
   list-style: none;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   justify-content: flex-start;
+}
+
+@media (min-width: 600px) {
+  ul {
+    padding: 1rem 2rem;
+  }
 }
 
 li {
@@ -45,11 +51,17 @@ ul a:hover {
 }
 
 main {
-  margin: 2rem 3rem;
+  margin: 2rem 0;
   height: 900px;
   display: flex;
   flex-direction: column;
   animation: fadein 1.5s;
+}
+
+@media (min-width: 600px) {
+  main {
+    margin: 2rem 3rem;
+  }
 }
 
 @keyframes fadein {
@@ -79,24 +91,6 @@ footer a {
 
 footer a:hover {
   box-shadow: 0 2px 6px inset rgba(0,0,0,0.1);
-  background-color: rgba(136,14,79,0.8);
+  background-color: rgba(145,39,94,1);
   color: white;
-}
-
-#intro {
-	background: linear-gradient(to right, #0d47a1 0%, #880e4f 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-  font-size: 3rem;
-}
-
-.intro-html {
-  color: rgba(160,160,160,1);
-}
-
-#intro span.emoji {
-	background: none;
-	-webkit-background-clip: initial;
-	-webkit-text-fill-color: initial;
-  font-size: 3rem;
 }
