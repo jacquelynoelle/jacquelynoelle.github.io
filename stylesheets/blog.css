@@ -1,0 +1,38 @@
+main {
+  margin: 2rem 7rem;
+  animation: fadein 0.5s;
+}
+
+article {
+  padding: 3rem 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+article img {
+  width: 100%;
+  margin: 0 0 1rem;
+}
+
+article p {
+  line-height: 1.8rem;
+}
+
+/*
+Saving this for when I actually write blog entries:
+
+.button {
+  border: 1px solid #880e4f;
+  color: #880e4f;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 0.1rem 0.2rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0;
+}
+
+.button:hover {
+  box-shadow: 0 0 0;
+  background-color: #880e4f;
+  color: white;
+} */
