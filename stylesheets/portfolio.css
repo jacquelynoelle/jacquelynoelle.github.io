@@ -1,33 +1,16 @@
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  animation: fadein 0.5s;
-}
-
-main section:last-child {
-  padding: 0 0 6rem;
-}
-
-main section ul {
-  padding: 0 0 2rem;
-  justify-content: center;
-}
-
-main section ul img {
-  height: 1.2rem;
-  opacity: 0.4;
-}
-
-main section ul img:hover {
-  height: 1.2rem;
-  opacity: 0.7;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 h1 {
   text-align: center;
 }
 
+main section ul {
+  padding-bottom: 2rem;
+  justify-content: center;
+}
 
 #the-work {
   display: flex;
@@ -36,19 +19,9 @@ h1 {
   width: 100%;
 }
 
-@media (min-width: 600px) {
-  #the-work {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-  }
-}
-
 #the-work > a {
   width: 100%;
-  height: 25rem;
+  height: 50rem;
   border: 1px white solid;
   display: flex;
   flex-direction: column;
@@ -59,53 +32,30 @@ h1 {
   background-size: cover;
 }
 
-@media (min-width: 600px) {
-  #the-work > a {
-    width: 49%;
-  }
-}
 
-#the-work h2, #the-work h4 {
-  margin: 0;
-  text-align: center;
-  visibility: hidden;
-  color: white;
-}
-
-#the-work h2 {
-  padding: 0 0 1rem;
-}
-
-#the-work h4 {
-  font-weight: lighter;
-  font-style: italic;
-  color: rgba(255,255,255, 0.7);
-}
-
-#the-work a.hotel {
-  background-image: url("../images/hotel.jpg");
-}
-
-#the-work a.alaska {
-  background-image: url("../images/alaska.jpg");
+#the-work a.sovietski {
+  background-image: url("../images/sovietski.jpg");
 }
 
 #the-work a.rideshare {
-  background-image: url("../images/taxi.jpg");
+  background-image: url("../images/rideshare.jpg");
 }
 
-#the-work a.patagonia {
-  background-image: url("../images/patagonia.jpg");
-}
-
-#the-work a.adagrams {
-  background-image: url("../images/adagrams.jpg");
+#the-work a.api-muncher {
+  background-image: url("../images/api-muncher.jpg");
 }
 
 #the-work a.google {
   background-image: url("../images/google.jpg");
 }
 
+#the-work a.patagonia {
+  background-image: url("../images/patagonia.jpg");
+}
+
+#the-work a.alaska {
+  background-image: url("../images/alaska.jpg");
+}
 
 #the-work div.overlay {
   display: flex;
@@ -114,15 +64,44 @@ h1 {
   align-items: center;
   height: 100%;
   width: 100%;
-  transition: .5s ease;
-  background-color: rgba(13,71,161,0);
+  background-color: rgba(13,71,161,0.5);
 }
 
-#the-work div.overlay:hover {
-  background-color: rgba(13,71,161,0.7);
+#the-work article {
+  width: 75%;
 }
 
-#the-work div:hover h2, #the-work div:hover h4 {
-  visibility: visible;
-  transition: 1s ease;
+#the-work h2, #the-work h4 {
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+#the-work h2 {
+  padding-bottom: 1rem;
+}
+
+#the-work h4 {
+  font-weight: lighter;
+  font-style: italic;
+  color: #E0E0E0;
+}
+
+@media screen and (min-width: 996px) {
+  main {
+    margin-bottom: 6rem;
+  }
+
+  #the-work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #the-work > a {
+    width: 49.5%;
+    height: 25rem;
+  }
 }

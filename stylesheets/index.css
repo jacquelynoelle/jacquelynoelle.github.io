@@ -1,13 +1,13 @@
 #intro {
-	background: linear-gradient(to right, rgb(13,71,161,1) 0%, rgba(136,14,79,1) 100%);
+	background: linear-gradient(to right, var(--navy) 0%, var(--magenta) 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-  font-size: 2rem;
+  font-size: 225%;
 }
 
 .intro-html {
-  color: rgba(160,160,160,1);
-  font-size: 1.5rem;
+  color: var(--light-grey);
+  font-size: 150%;
 }
 
 #intro span.emoji {
@@ -16,20 +16,24 @@
 	-webkit-text-fill-color: initial;
 }
 
-main {
-  margin: 2rem 2rem;
+#asterisk {
+	padding-top: 14rem;
+	padding-bottom: 14rem;
+	font-size: 75%;
+	color: var(--light-grey);
 }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 996px) {
   #intro {
     font-size: 3rem;
   }
 
   .intro-html {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
-  main {
-    margin: 2rem 3rem;
-  }
+	#asterisk {
+		font-size: 0.75rem;
+		padding-bottom: 0;
+	}
 }

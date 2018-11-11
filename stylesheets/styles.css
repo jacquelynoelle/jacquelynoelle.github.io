@@ -1,45 +1,52 @@
+:root {
+  --magenta: #880E4F;
+  --light-magenta: #AD1457;
+  --dark-grey: #212121;
+  --light-grey: #9E9E9E;
+  --navy: #01579B;
+}
+
 body {
   font-family: Helvetica;
   font-weight: lighter;
-  color: rgba(64,64,64,1);
+  color: var(--dark-grey);
+  font-size: 2.5rem;
+}
+
+header {
+  margin: 4rem 4rem 5rem;
 }
 
 a {
-  color: rgba(136,14,79,1);
   text-decoration: none;
-}
-
-a:hover {
-  color: rgba(136,14,79,0.8);
+  color: var(--magenta);
 }
 
 ul {
   display: flex;
   flex-direction: row;
   list-style: none;
-  padding: 1rem 1rem;
   justify-content: flex-start;
-}
-
-@media (min-width: 600px) {
-  ul {
-    padding: 1rem 2rem;
-  }
+  padding: 0;
 }
 
 li {
-  padding: 0 1rem;
+  margin-right: 2rem;
 }
 
-ul a {
-  color: rgba(160,160,160,1);
-  text-decoration: none;
+ul li:last-child {
+  margin-right: 0;
 }
 
-ul a:hover {
-  color: rgba(64,64,64,1);
+li a {
   text-decoration: none;
+  color: var(--light-grey);
 }
+
+li a:hover {
+  color: var(--magenta);
+}
+
 
 #jackie {
   margin-right: auto;
@@ -47,21 +54,13 @@ ul a:hover {
 }
 
 #jackie a {
-  color: rgba(64,64,64,1);
+  color: var(--dark-grey);
 }
 
 main {
-  margin: 2rem 0;
-  height: 900px;
-  display: flex;
-  flex-direction: column;
   animation: fadein 1.5s;
-}
-
-@media (min-width: 600px) {
-  main {
-    margin: 2rem 3rem;
-  }
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 @keyframes fadein {
@@ -70,27 +69,52 @@ main {
 }
 
 footer {
-  padding: 2rem 3rem;
+  padding: 4rem;
   position: fixed;
   bottom: 0;
   right: 0;
 }
 
 footer a {
-  background-color: rgba(136,14,79,1);
+  background-color: var(--magenta);
   color: white;
   border: 0;
-  padding: 0.8rem;
-  border-radius: 25px;
+  padding: 1.75rem;
+  border-radius: 3rem;
   float: right;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 100%;
 }
 
 footer a:hover {
   box-shadow: 0 2px 6px inset rgba(0,0,0,0.1);
-  background-color: rgba(145,39,94,1);
+  background-color: var(--light-magenta);
   color: white;
+}
+
+@media screen and (min-width: 996px) {
+  body {
+    font-size: 1rem;
+  }
+
+  header {
+    margin: 2rem 3rem 3rem;
+  }
+
+  main {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  footer {
+    padding: 3rem;
+  }
+
+  footer a {
+    padding: 0.75rem;
+    border-radius: 3rem;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.5);
+  }
 }
